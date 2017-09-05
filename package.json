@@ -5,6 +5,7 @@
   "main": "cjs/index.js",
   "module": "es/index.js",
   "scripts": {
+    "postInstall" : "node scripts/build.js",
     "check": "npm run lint && npm run test",
     "lint": "eslint {components,internal}/**",
     "test": "jest '/(__tests__|components|lib|internal)/' && npm run test-ssr",
